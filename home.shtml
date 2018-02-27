@@ -1,0 +1,28 @@
+<section id="home">
+	<article>
+		<h3>Introducción</h3>
+		<div class="gridBox c100">
+			<div class="grid c_40">
+				<div class="mediaBox">
+					<span class="pantalla">
+						<input type="checkbox"></input>
+						<span class="boton"></span>
+						<div class="be_on-off"></div>
+						<img src="i/monitor.png" />
+					</span>
+				</div>
+			</div>
+			
+		<div class="grid c_60">
+			<div class="txtBox">
+				<p>Aquí están recogidos todos los trabajos que he realizado, ya sean para blogs, cómo en las empresas en las que he estado, e incluso trabajos de proyectos propios. Todos los trabajos que están aquí expuestos son de libre acceso.</p>
+				<p>En ésta web tendrá fácil acceso a los conocimientos y aptitudes que he ido obteniendo, además encontrará información relacionada con mi perfil profesional.</p>
+				<p>Este sitio web es totalmente responsive, por lo que se puede visualizar en cualquier tipo de pantalla/dispositivo. Además es un sitio web accesible, ya que funciona sin programación Javascript, y están indicados todos los elemento como textos e imágenes.</p>
+				<p>La información aquí recogida irá siendo actualizada con la mayor frecuencia posible.</p>
+				<p>Espero que encuentre en esta web todo lo que necesita saber.</p>
+				<p>Gracias por su visita.</p>
+			</div>
+		</div>
+		</div>
+	</article>
+</section>

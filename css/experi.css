@@ -1,0 +1,9 @@
+#experiencia h4{display:inline-block;font-size:1.6rem;font-weight:200;padding-right:1rem;border-bottom:.1rem solid #ffdb90;}
+
+#experiencia ul{padding:1rem 0;}
+
+#experiencia ul .titBox,
+#experiencia ul .txtBox,
+#experiencia ul .auxBox{font-size:1.2rem;line-height:1.64rem;padding:0;}
+
+#experiencia ul .titBox{font-weight:bold;}

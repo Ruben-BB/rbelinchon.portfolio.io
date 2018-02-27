@@ -1,0 +1,6 @@
+.mainbodier .bodier #contact{padding-bottom:0;}
+#contact .gridBox{background:#ffebe1;}
+#contact .grid .txtBox{background:#fff;padding:1rem;text-align:center;}
+
+#contact .grid .txtBox p{font-size:1.4rem;}
+#contact .grid .txtBox p .marked{font-weight:700;}

@@ -1,0 +1,28 @@
+/*tamaños*/
+#works #mosaic:checked ~ .gallery .trabajo{width:33.3333%;}
+
+#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo:nth-child(12n+5), #works #all:checked ~ #mosaic:checked ~ .gallery .trabajo:nth-child(12n+6),
+#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo:nth-child(12n+7), #works #all:checked ~ #mosaic:checked ~ .gallery .trabajo:nth-child(12n+8),
+#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo:nth-child(12n+10),#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo:nth-child(12n+12){width:12.5%;}
+
+#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo:nth-child(12n+1),#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo:nth-child(12n+3),
+#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo:nth-child(12n+4),#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo:nth-child(12n+9),
+#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo:nth-child(12n+11){width:25%;}
+
+#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo:nth-child(12n+2){width:50%;}
+
+
+/*paddings*/
+#works #mosaic:checked ~ .gallery .trabajo .ima{padding-top:56.25%;}
+
+#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo:nth-child(12n+5) .ima, #works #all:checked ~ #mosaic:checked ~ .gallery .trabajo:nth-child(12n+6) .ima,
+#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo:nth-child(12n+7) .ima, #works #all:checked ~ #mosaic:checked ~ .gallery .trabajo:nth-child(12n+8) .ima,
+#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo:nth-child(12n+10) .ima,#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo:nth-child(12n+12) .ima{padding-top:100%;}
+
+#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo:nth-child(12n+1) .ima, #works #all:checked ~ #mosaic:checked ~ .gallery .trabajo:nth-child(12n+3) .ima,
+#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo:nth-child(12n+4) .ima, #works #all:checked ~ #mosaic:checked ~ .gallery .trabajo:nth-child(12n+9) .ima,
+#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo:nth-child(12n+11) .ima{padding-top:46.350365%;}
+
+#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo:nth-child(12n+2) .ima{padding-top:48.24%;}
+
+#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo:nth-child(12n+4){height:0;position:relative;left:-75%;margin-bottom:-2rem;}

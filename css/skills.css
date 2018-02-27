@@ -1,0 +1,10 @@
+/*skills*/
+.type{text-align:center;}
+.type .cont{width:16.66666%;height:0;display:inline-block;margin-left:-0.3rem;position:relative;padding-top:calc(16.66666% - 4rem);border-width:2rem 2rem 5rem 2rem;border-style:solid;border-color:transparent;z-index:0;}
+
+.type .cont:before,.cont:after{content:"";display:block;border-radius:50%;position:absolute;z-index:-1;}
+.type .cont:after{height:85%;width:85%;background:rgb(255, 255, 255);display:block;top:7.5%;left:7.5%;}
+.type .cont:before{height:100%;width:100%;background:#D3E2D7;display:block;top:0;left:0;}
+
+.type .cont canvas{position:absolute;height:100%;width:100%;top:0;left:0;}
+.type .cont p{font-size:1.6rem;width:100%;padding-top:1rem;position:absolute;left:0;}

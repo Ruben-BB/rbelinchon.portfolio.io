@@ -1,0 +1,12 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Encode+Sans+Condensed");
+
+@import url("basics.css");
+@import url("colors.css");
+@import url("intro.css");
+@import url("skills.css");
+@import url("works.css");
+@import url("experi.css");
+@import url("contact.css");
+
+@import url("responsive.css");

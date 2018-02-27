@@ -1,0 +1,141 @@
+/***responsive***/
+@media (max-width:1024px){
+.c_40{width:35%;}
+.c_60{width:65%;}
+
+.gridBox, .grid{padding:1rem;}
+
+.mainbodier .bodier section .txtBox p{font-size:1rem;padding-bottom:1rem;}
+
+/*intro*/
+.mainbodier #home .mediaBox .pantalla input{top:14%;}
+.mainbodier #home .mediaBox .pantalla .be_on-off{width:64%;height:58%;top:21%;left:18%;overflow:hidden;}
+.mainbodier #home .mediaBox .pantalla input + .boton,
+.mainbodier .bodier section .mediaBox img{opacity:0;animation:none;}
+
+.mainbodier #home .mediaBox .pantalla:after{content:"";height:100%;width:100%;background-image:url(../i/ipad.png);background-size:100% auto;position:absolute;top:0;left:0;}
+.mainbodier #home .mediaBox .pantalla input:checked ~.be_on-off{background:url(../i/ipad_inicio.png) no-repeat;background-size:cover;z-index:1;}
+.mainbodier #home .mediaBox .pantalla input ~.be_on-off:before{content:"";width:100%;height:100%;position:absolute;top:0;left:0;transform:scale(1,1);}
+.mainbodier #home .mediaBox .pantalla input ~.be_on-off:after{background-image:url(../i/ipad_contenido.png);transition-delay:0s;}
+
+.mainbodier #home .mediaBox .pantalla input:checked ~.be_on-off:before{background-image:url(../i/ipad_bloqueo.png);background-size:contain;z-index:0;transition:all .3s linear;transition-delay:.5s;box-shadow:0 0 30rem 10rem rgba(0,0,0,.8);transform:scale(0,0);}
+.mainbodier #home .mediaBox .pantalla input:checked ~.be_on-off:after{transition-delay:1.5s;}
+
+/*works*/
+#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo.t_fp,
+#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo.t_sp,
+#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo.t_dr,
+#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo.t_dtc,
+#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo.t_other{width:33.3333%;height:auto;left:0;margin:0;}
+
+#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo.t_fp .c_80,
+#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo.t_sp .c_80,
+#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo.t_dr .c_80,
+#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo.t_dtc .c_80,
+#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo.t_other .c_80,
+#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo.t_fp .ima,
+#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo.t_sp .ima,
+#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo.t_dr .ima,
+#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo.t_dtc .ima,
+#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo.t_other .ima{padding-top:56.25%;}
+
+/*skills*/
+#skills .type .cont p{font-size:1.4vw;}
+
+/*contact*/
+#contact .grid .txtBox p{font-size:1.4vw;}
+}
+
+@media (max-width:730px){
+div[class*="c_"]{width:100%;}
+.gridBox, .grid{padding:1rem 0;}
+
+header{height:5rem;}
+header h1 img {height:3.5rem;margin-top:-1.75rem;margin-left:-1.6219rem;}
+header h1 .infoBox{clip:rect(0,0,0,0);position:absolute;top:-100%;left:-100%;overflow:hidden;}
+nav label{top:-2.5rem;}
+
+.mainbodier .bodier{padding-top:5rem;}
+.mainbodier .bodier section{padding:0 2rem;padding-top: 5rem;margin-top: -5rem;}
+.mainbodier .bodier section .txtBox p{font-size:1.2rem;}
+
+/*intro*/
+.mainbodier #home .txtBox{padding:1rem 2rem;border-left:0;border-top:.1rem solid #ccc;}
+
+.mainbodier #home .mediaBox .pantalla input{height:80%;width:28%;top:10%;left:36%;}
+.mainbodier #home .mediaBox .pantalla .be_on-off{height:62%;width:26%;top:18%;left:37%;}
+
+.mainbodier #home .mediaBox .pantalla:after{background-image:url(../i/iphone.png);}
+.mainbodier #home .mediaBox .pantalla input:checked ~.be_on-off{background-image:url(../i/iphone_inicio.png);}
+.mainbodier #home .mediaBox .pantalla input ~.be_on-off:after{background-image:url(../i/iphone_contenido.png)}
+.mainbodier #home .mediaBox .pantalla input:checked ~.be_on-off:before{background-image:url(../i/iphone_bloqueo.png);}
+
+/*works*/
+#works #mosaic:checked ~ .gallery{padding:1rem;}
+#works .tag{margin-bottom:.5rem;}
+#works input[name="itemlist"] + label{clip:rect(0,0,0,0);position:absolute;top:-100%;left:-100%;overflow:hidden;}
+
+#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo.t_fp,
+#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo.t_sp,
+#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo.t_dr,
+#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo.t_dtc,
+#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo.t_other,
+#works #mosaic:checked ~ .gallery .trabajo,
+#works #all:checked ~ #list:checked ~ .gallery .trabajo.t_fp,
+#works #all:checked ~ #list:checked ~ .gallery .trabajo.t_sp,
+#works #all:checked ~ #list:checked ~ .gallery .trabajo.t_dr,
+#works #all:checked ~ #list:checked ~ .gallery .trabajo.t_dtc,
+#works #all:checked ~ #list:checked ~ .gallery .trabajo.t_other,
+#works #list:checked ~ .gallery .trabajo{width:100%;padding:2rem 0;border-width:0 0 .1rem 0;border-style:solid;border-color:#d3e2d7;}
+
+#works #list:checked ~ .gallery .trabajo .txtBox .auxBox{clip:rect(0,0,0,0);position:absolute;top:-100%;left:-100%;overflow:hidden;}
+
+#works .gallery .trabajo h4,
+#works #mosaic:checked ~ .gallery .trabajo h4{color:#686868;float:none;margin:0;}
+
+#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo.t_fp .c_80,
+#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo.t_sp .c_80,
+#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo.t_dr .c_80,
+#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo.t_dtc .c_80,
+#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo.t_other .c_80,
+#works #mosaic:checked ~ .gallery .trabajo .c_80{padding:0;position:relative;}
+
+#works #mosaic:checked ~ .gallery .trabajo .c_80 .txtBox,
+#works #list:checked ~ .gallery .trabajo .c_80 .txtBox{background:transparent;position:relative;}
+
+#works #mosaic:checked ~ .gallery .trabajo .c_80 .txtBox,
+#works #list:checked ~ .gallery .trabajo .c_80 .txtBox{padding:0 2rem;}
+
+/*skills*/
+.type .cont{width:50%;padding-top: calc(50% - 4rem);}
+#skills .type .cont p{font-size: 4vw;}
+
+/*contact*/
+#contact .grid{padding:1rem;}
+#contact .grid .txtBox{padding:1rem 0;}
+#contact .grid .txtBox p{font-size:1.4rem;}
+
+    @media (orientation:landscape){
+	/*intro*/
+	.mainbodier #home .mediaBox .pantalla{width: 50%;left: 50%;margin-left: -25%;}
+
+	/*works*/
+    #works #all:checked ~ #mosaic:checked ~ .gallery .trabajo.t_fp,
+	#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo.t_sp,
+	#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo.t_dr,
+	#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo.t_dtc,
+	#works #all:checked ~ #mosaic:checked ~ .gallery .trabajo.t_other,
+	#works #mosaic:checked ~ .gallery .trabajo,#works .gallery .trabajo,
+	#works #all:checked ~ #list:checked ~ .gallery .trabajo.t_fp,
+	#works #all:checked ~ #list:checked ~ .gallery .trabajo.t_sp,
+	#works #all:checked ~ #list:checked ~ .gallery .trabajo.t_dr,
+	#works #all:checked ~ #list:checked ~ .gallery .trabajo.t_dtc,
+	#works #all:checked ~ #list:checked ~ .gallery .trabajo.t_other,
+	#works #list:checked ~ .gallery .trabajo,#works .gallery .trabajo{width:50%;padding:1rem;border-left:.1rem solid #d3e2d7;border-right:.1rem solid #d3e2d7;}
+    
+    /*skills*/
+    .type{display: inline;}
+    .type .cont{width:25%;padding-top: calc(25% - 4rem);}
+    #skills .type .cont p{font-size:2vw;}
+    }
+}
