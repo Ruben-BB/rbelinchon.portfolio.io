@@ -17,9 +17,9 @@
 #works .gallery .trabajo{float:left;width:100%;padding:2rem 0;border-bottom:.1rem solid #d3e2d7;position:relative;}
 
 /** selector **/
-#works input[id="fp"]:checked ~ .gallery .trabajo:not(.t_fp),#works input[id="sp"]:checked ~ .gallery .trabajo:not(.t_sp),
-#works input[id="dr"]:checked ~ .gallery .trabajo:not(.t_dr),#works input[id="dtc"]:checked ~ .gallery .trabajo:not(.t_dtc),
-#works input[id="other"]:checked ~ .gallery .trabajo:not(.t_other){clip:rect(0,0,0,0);position:absolute;top:-100%;left:-100%;overflow:hidden;}
+#works input[id="fp"]:checked ~ .gallery .trabajo:not(.FP),#works input[id="sp"]:checked ~ .gallery .trabajo:not(.SystemPorsche),
+#works input[id="dr"]:checked ~ .gallery .trabajo:not(.droide),#works input[id="dtc"]:checked ~ .gallery .trabajo:not(.coche),
+#works input[id="other"]:checked ~ .gallery .trabajo:not(.Otros){clip:rect(0,0,0,0);position:absolute;top:-100%;left:-100%;overflow:hidden;}
 
 /** mosaic **/
 #works #mosaic:checked ~ .gallery .trabajo .c_20{width:100%;}
