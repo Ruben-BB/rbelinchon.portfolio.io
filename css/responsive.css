@@ -11,7 +11,7 @@
 .mainbodier #home .mediaBox .pantalla input{top:14%;}
 .mainbodier #home .mediaBox .pantalla .be_on-off{width:64%;height:58%;top:21%;left:18%;overflow:hidden;}
 .mainbodier #home .mediaBox .pantalla input + .boton,
-.mainbodier .bodier section .mediaBox img{animation:none;}
+.mainbodier .bodier section .mediaBox .pantalla img{animation:none;opacity:0;}
 
 .mainbodier #home .mediaBox .pantalla:after{content:"";height:100%;width:100%;background-image:url(../i/ipad.png);background-size:100% auto;position:absolute;top:0;left:0;}
 .mainbodier #home .mediaBox .pantalla input:checked ~.be_on-off{background:url(../i/ipad_inicio.png) no-repeat;background-size:cover;z-index:1;}
