@@ -39,4 +39,4 @@
 #works .trabajo .tag{float:right;margin:0;margin:.5rem .5rem .5rem 0;cursor:default;}
 
 #works .gallery .ima{overflow:hidden;}
-#works .gallery .ima img{max-height:initial;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);}
+#works .gallery .ima img{max-height:initial;width:100%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);}
