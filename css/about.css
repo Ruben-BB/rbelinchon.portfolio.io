@@ -1,0 +1,14 @@
+/**about**/
+.self{margin-top:-6.3rem;text-align:center;position:relative;overflow:hidden;background:#444;padding-top:100%;position:absolute;}
+.self:before,.self:after{content:"";display:block;height:200%;width:20%;background:#f7931e;position:absolute;top:0;z-index:1;}
+.self:before{right:50%;transform:skew(10deg);}
+.self:after{right:-50%;transform:skew(10deg);}
+.self img{height:auto;width:100%;position:absolute;top:50%;left:0;transform:translate(0,-150%);}
+
+@media (max-width:1024px){
+    .self{margin-top:-5.3rem;}
+}
+
+@media (max-width:730px){
+    .self{margin-top:0;}
+}

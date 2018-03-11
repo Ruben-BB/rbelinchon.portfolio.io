@@ -1,10 +1,55 @@
-/*skills*/
+/**skills**/
+/*base*/
 .type{text-align:center;}
-.type .cont{width:16.66666%;height:0;display:inline-block;margin-left:-0.3rem;position:relative;padding-top:calc(16.66666% - 4rem);border-width:2rem 2rem 5rem 2rem;border-style:solid;border-color:transparent;z-index:0;}
+.type .cont{width:16.66666%;height:0;display:inline-block;margin-left:-0.3rem;position:relative;padding:0;padding-top:calc(16.66666% - 4rem);border-width:2rem 2rem 5rem 2rem;border-style:solid;border-color:transparent;float:none;z-index:0;}
 
-.type .cont:before,.cont:after{content:"";display:block;border-radius:50%;position:absolute;z-index:-1;}
-.type .cont:after{height:85%;width:85%;background:rgb(255, 255, 255);display:block;top:7.5%;left:7.5%;}
-.type .cont:before{height:100%;width:100%;background:#D3E2D7;display:block;top:0;left:0;}
+.type .cont canvas,.type.progress-bar svg{width:100%;height:100%;position:absolute;top:0;left:0;}
+.type .cont p{font-size:1.6rem;width:100%;padding-top:1rem;position:absolute;left:0;text-align:center;}
 
-.type .cont canvas{position:absolute;height:100%;width:100%;top:0;left:0;}
-.type .cont p{font-size:1.6rem;width:100%;padding-top:1rem;position:absolute;left:0;}
+
+/*barras*/
+.progress{display:inline-block;width:100%;padding:2rem 4rem;}
+.progress-bar{padding:1rem 1rem;float:left;width:100%;position:relative;}
+.progress [class*="c_"]:nth-child(odd){padding-right:3rem;}
+.progress [class*="c_"]:nth-child(even){padding-left:3rem;}
+
+.progress-bar p{font-size:1.6em;line-height:1.8rem;text-align:left;width:25%;float:left;}
+
+.progress-bar [class*="bar"]{background:#e6e6e6;width:75%;height:.8rem;transform:skew(30deg);position:relative;top:.5rem;float:left;}
+[class*="c_"] .progress-bar:after, .progress-bar [class*="bar"]:before, .progress-bar [class*="bar"]:after{content:"";display:block;height:100%;position:absolute;top:0;}
+
+[class*="c_"] .progress-bar:after{width:1rem;background:#fff;left:25%;}
+.progress-bar [class*="bar"]:before{background:#ccc;width:0;left:0;}
+.progress-bar [class*="bar"]:after{content:attr(data-width);font-size:1rem;height:auto;line-height:1.2rem;transform:skew(-30deg);top:-1.2rem;right:0;}
+
+.progress-bar .barDesign:before{background:#f7931e;}
+.progress-bar .barImpre:before{background:#0071bc;}
+
+.progress-bar [data-width="90%"]:before{max-width:90%;}
+.progress-bar [data-width="80%"]:before{max-width:80%;}
+.progress-bar [data-width="75%"]:before{max-width:75%;}
+.progress-bar [data-width="70%"]:before{max-width:70%;}
+.progress-bar [data-width="65%"]:before{max-width:65%;}
+.progress-bar [data-width="60%"]:before{max-width:60%;}
+.progress-bar [data-width="55%"]:before{max-width:55%;}
+
+
+/*circulos*/
+.fondo{fill:none;stroke-width:.8rem;stroke:#78bb90;}
+.recorte{fill:none;stroke-width:.8rem;stroke-dasharray:295%;stroke-dashoffset:0%;stroke:#e6e6e6;transform:translate(0%,100%) rotate(-90deg);transition:stroke-dashoffset 1s linear;}
+
+.progress-animation .html .recorte{stroke-dashoffset:-236%;}
+.progress-animation .css .recorte{stroke-dashoffset:-250.75%;}
+.progress-animation .js .recorte{stroke-dashoffset:-132.75%;}
+.progress-animation .php .recorte{stroke-dashoffset:-147.5%;}
+.progress-animation .mysql .recorte{stroke-dashoffset:-132.75%;}
+
+.progress [role="progresscircle"]:after{content:attr(data-width);width:4rem;font-size:1.8rem;color:#686868;text-align:center;line-height:4rem;position:absolute;top:50%;margin-top:-2rem;left:50%;margin-left:-2rem;}
+
+/*animate*/
+.progress-animation [class*="bar"]:before{animation:progress 1.5s ease-in-out forwards;}
+
+@keyframes progress {
+  from {width:0;}
+  to {width:100%;}
+}

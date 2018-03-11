@@ -5,7 +5,11 @@
 
 .gridBox, .grid{padding:1rem;}
 
-.mainbodier .bodier section .txtBox p{font-size:1rem;padding-bottom:1rem;}
+.mainbodier .bodier section .txtBox p{font-size:1.4rem;padding-bottom:1rem;}
+
+/*image-banner*/
+.mainbodier .bodier #image-banner .gridBox .txtBox p{font-size:2.8em;}
+.mainbodier .bodier #image-banner .gridBox .mediaBox img{max-height:12rem;}
 
 /*intro*/
 .mainbodier #home .mediaBox .pantalla input{top:14%;}
@@ -41,6 +45,15 @@
 
 /*skills*/
 #skills .type .cont p{font-size:1.4vw;}
+.progress-bar p{font-size:1.4rem;}
+
+@media (orientation:portrait){
+[class*="c_"] .progress-bar:after{left:40%;}
+.progress-bar p{width:40%;}
+.progress-bar [class*="bar"]{width:60%;}
+
+.type .cont{border-left-width:.8rem;border-right-width:.8rem;padding-top:calc(16.66666% - 1.6rem);}
+}
 
 /*contact*/
 #contact .grid .txtBox p{font-size:1.4vw;}
@@ -56,8 +69,15 @@ header h1 .infoBox{clip:rect(0,0,0,0);position:absolute;top:-100%;left:-100%;ove
 nav label{top:-2.5rem;}
 
 .mainbodier .bodier{padding-top:5rem;}
-.mainbodier .bodier section{padding:0 2rem;padding-top: 5rem;margin-top: -5rem;}
+.mainbodier .bodier section{padding:0 2rem;padding-top:5rem;margin-top:-5rem;padding-bottom:2rem;}
+.mainbodier .bodier section.striplayer{padding-left:0;padding-right:0;}
+.mainbodier .bodier section.striplayer article{padding:0 2rem;}
 .mainbodier .bodier section .txtBox p{font-size:1.2rem;}
+
+/*image-banner*/
+#image-banner .c_50:first-child{display:none;}
+.mainbodier .bodier #image-banner article:before{background-size:200%;background-position:center;}
+.self{max-width:28rem;display:block;margin:0 auto;float:none;}
 
 /*intro*/
 .mainbodier #home .txtBox{padding:1rem 2rem;border-left:0;border-top:.1rem solid #ccc;}
@@ -107,17 +127,30 @@ nav label{top:-2.5rem;}
 #works #list:checked ~ .gallery .trabajo .c_80 .txtBox{padding:0 2rem;}
 
 /*skills*/
-.type .cont{width:50%;padding-top: calc(50% - 4rem);}
-#skills .type .cont p{font-size: 4vw;}
+.type .cont{width:50%;padding-top:calc(50% - 1rem);border-width:2rem .5rem 3rem .5rem;}
+#skills .type .cont p{font-size:4vw;}
+.progress{padding:1rem 2rem;}
+.progress [class*="c_"]:nth-child(odd),
+.progress [class*="c_"]:nth-child(even){padding:0;}
+[class*="c_"] .progress-bar:after{width:2rem;height:2rem;top:auto;left:-1rem;bottom:0;}
+.progress-bar [class*="bar"]{width:calc(100% + 2rem);margin-left:-1rem;}
+.progress-bar [class*="bar"]:after{font-size:1.6rem;line-height:0;}
 
 /*contact*/
+.mainbodier .bodier #contact,
+.mainbodier .bodier #contact article{padding-top:5rem;}
+#contact form .c100{padding:0;}
+#contact form + .c100{padding-top:9rem;}
+
+.mainbodier .bodier section#contact h3,
+#contact form + .c100 h3 + .grid .txtBox{text-align:center;}
 #contact .grid{padding:1rem;}
 #contact .grid .txtBox{padding:1rem 0;}
 #contact .grid .txtBox p{font-size:1.4rem;}
 
     @media (orientation:landscape){
 	/*intro*/
-	.mainbodier #home .mediaBox .pantalla{width: 50%;left: 50%;margin-left: -25%;}
+	.mainbodier #home .mediaBox .pantalla{width:50%;left:50%;margin-left:-25%;}
 
 	/*works*/
     #works #all:checked ~ #mosaic:checked ~ .gallery .trabajo.FP,
@@ -134,8 +167,8 @@ nav label{top:-2.5rem;}
 	#works #list:checked ~ .gallery .trabajo,#works .gallery .trabajo{width:50%;padding:1rem;border-left:.1rem solid #d3e2d7;border-right:.1rem solid #d3e2d7;}
     
     /*skills*/
-    .type{display: inline;}
-    .type .cont{width:25%;padding-top: calc(25% - 4rem);}
+    .type{display:inline;}
+    .type .cont{width:33.3333%;padding-top:calc(33.3333% - 1rem);}
     #skills .type .cont p{font-size:2vw;}
     }
 }

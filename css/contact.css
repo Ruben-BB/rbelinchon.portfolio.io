@@ -1,6 +1,22 @@
-.mainbodier .bodier #contact{padding-bottom:0;}
-#contact .gridBox{background:#ffebe1;}
-#contact .grid .txtBox{background:#fff;padding:1rem;text-align:center;}
+/**contact**/
+.mainbodier .bodier #contact{padding:9.5rem 0 0 0;}
+
+/*form*/
+#contact form .c100{float:left;position:relative;padding:4rem 0;}
+#contact form [class*="c_"]{position:relative;border-style:solid;border-width:2.5rem 1rem;border-color:transparent;}
+#contact form [class*="c_"]:after{content:"";height:.2rem;width:100%;display:block;background:#fff;position:absolute;bottom:-.5rem;left:0;}
+#contact form input{background:transparent;border:none;color:#FFDB90;font-size:2.4rem;width:100%;cursor:text;}
+#contact form input::placeholder{color:rgba(255,219,144,.4);}
+
+#contact form input[type="submit"]{color:#FFDB90;background:rgba(255,255,255,.2);font-size:1.4rem;font-weight:600;line-height:3rem;text-align:center;width:8rem;display:inline-block;border-radius:.6rem;position:relative;right:-2.5rem;bottom:-2.5rem;cursor:pointer;}
+#contact form input[type="submit"]:hover{color:#fff;background:rgba(255,219,144,.4);}
+
+/*datos*/
+.mainbodier .bodier section#contact h3{text-align:left;font-weight:300;}
+#contact form + .c100{clear:both;padding-top:4rem;}
+#contact .grid{padding:2rem 0;}
+#contact form + .c100 .grid .txtBox{padding:0;text-align:center;}
+#contact form + .c100 h3 + .grid .txtBox{text-align:left;}
 
 #contact .grid .txtBox p{font-size:1.4rem;}
-#contact .grid .txtBox p .marked{font-weight:700;}
+#contact .grid .txtBox p .marked{font-weight:700;color:#FFDB90;}

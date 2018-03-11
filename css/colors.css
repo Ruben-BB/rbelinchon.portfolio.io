@@ -1,7 +1,11 @@
 /*** Colores ***/
 /**fondos**/
-html{background:#e6e5e6;}
+html{background:#e6e5e6;background:#fff;}
 .mainbodier section{background:#fff;}
+
+.mainbodier .bodier #image-banner article{background:#78BB90;}
+.mainbodier .bodier #about article{background:#F7931E;padding-top:2rem;overflow:hidden;}
+.mainbodier .bodier #contact article{background:#292929;padding-top:9.5rem;}
 
 /**fuentes**/
 html{color:#686868;}
@@ -9,6 +13,8 @@ html{color:#686868;}
 .mainbodier section h2{color:#4d4d4d;}
 nav label ul li a span:after,
 .mainbodier section h2:after{color:#ffdb90;}
+
+.mainbodier #about h2:after{color:#666;}
 
 /*works*/
 #works input[name="itemtag"]:checked + label,
