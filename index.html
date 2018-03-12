@@ -284,9 +284,9 @@
 									</div>
 								</div>
 							</div>
-							<div class="type progress progress-bar">
+							<div class="type progress">
 								<!-- Maquetación -->
-								<div class="cont html" role="progresscircle" data-width="80%">
+								<div class="cont progress-bar html" role="progresscircle" data-width="80%">
 									<!--<canvas id="html5" width="200" height="200"></canvas>-->
 									<svg height="200" width="200">
 										<circle cx="50%" cy="50%" r="47%" class="fondo"/>
@@ -294,7 +294,7 @@
 									</svg>
 									<p>HTML5</p>
 								</div>
-								<div class="cont css" role="progresscircle" data-width="85%">
+								<div class="cont progress-bar css" role="progresscircle" data-width="85%">
 									<!--<canvas id="css3" width="200" height="200"></canvas>-->
 									<svg height="200" width="200">
 										<circle cx="50%" cy="50%" r="47%" class="fondo"/>
@@ -302,7 +302,7 @@
 									</svg>
 									<p>CSS3</p>
 								</div>
-								<div class="cont js" role="progresscircle" data-width="45%">
+								<div class="cont progress-bar js" role="progresscircle" data-width="45%">
 									<!--<canvas id="js" width="200" height="200"></canvas>-->
 									<svg height="200" width="200">
 										<circle cx="50%" cy="50%" r="47%" class="fondo"/>
@@ -310,7 +310,7 @@
 									</svg>
 									<p>JS</p>
 								</div>
-								<div class="cont php" role="progresscircle" data-width="50%">
+								<div class="cont progress-bar php" role="progresscircle" data-width="50%">
 									<!--<canvas id="php5" width="200" height="200"></canvas>-->
 									<svg height="200" width="200">
 										<circle cx="50%" cy="50%" r="47%" class="fondo"/>
@@ -318,7 +318,7 @@
 									</svg>
 									<p>PHP5</p>
 								</div>
-								<div class="cont mysql" role="progresscircle" data-width="45%">
+								<div class="cont progress-bar mysql" role="progresscircle" data-width="45%">
 									<!--<canvas id="mysql" width="200" height="200"></canvas>-->
 									<svg height="200" width="200">
 										<circle cx="50%" cy="50%" r="47%" class="fondo"/>
@@ -335,12 +335,12 @@
 					<article>
 						<h2>Contacto</h2>
 						<div class="gridBox c100">
-							<form action="enviar.php" method="post">
+							<form method="post">
 								<div class="c100">
 									<div class="c_40"><input type="text" name="nombre" id="campoNombre" placeholder="Nombre"></input></div>
 									<div class="c_60"><input type="text" name="email" id="campoEmail" placeholder="Correo"></input></div>
 									<div class="c_90"><input type="text" name="comentarios" id="campoMensaje" placeholder="Mensaje"></input></div>
-									<input type="submit" value="Enviar"></input>
+									<input type="submit" value="Enviar " onclick="enviar();"></input>
 								</div>
 							</form>
 							<div class="c100">
