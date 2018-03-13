@@ -1,5 +1,5 @@
 /**about**/
-.self{margin-top:-6.3rem;text-align:center;position:relative;overflow:hidden;background:#444;padding-top:100%;position:absolute;top: 0;right: 0;}
+.self{margin-top:-6.3rem;text-align:center;position:relative;overflow:hidden;background:#444;padding-top:100%;position:absolute;top:0;right:0;}
 .self:before,.self:after{content:"";display:block;height:200%;width:20%;background:#f7931e;position:absolute;top:0;z-index:1;}
 .self:before{right:50%;-webkit-transform:skew(10deg);transform:skew(10deg);}
 .self:after{right:-50%;-webkit-transform:skew(10deg);transform:skew(10deg);}

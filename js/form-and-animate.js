@@ -18,9 +18,9 @@
 			// validación formulario
 			$('form').on('submit', function(e){
 
-				let nombre = $('#campoNombre').val();
-				let email = $('#campoEmail').val();
-				let mensaje = $('#campoMensaje').val();
+				let nombre = $('#name').val();
+				let email = $('#email').val();
+				let mensaje = $('#message').val();
 
 				if (nombre.length < 2) {
 					mostrarError("Por favor, introduce un nombre.");
@@ -33,4 +33,5 @@
 				if (mensaje.length < 12) {
 					mostrarError("El mensaje es demasiado corto.");
 					e.preventDefault();}
+
 			});

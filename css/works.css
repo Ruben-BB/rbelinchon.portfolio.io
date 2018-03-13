@@ -14,7 +14,7 @@
 
 #works .gallery{padding:1rem;width:100%;float:left;}
 #works #mosaic:checked ~ .gallery{padding:2rem 0;text-align:center;}
-#works .gallery .trabajo{width:100%;padding:2rem 0;display:inline-flex;margin:-.2rem;border-bottom:.1rem solid #d3e2d7;position:relative;}
+#works .gallery .trabajo{width:100%;padding:2rem 0;display:inline-block;border-bottom:.1rem solid #d3e2d7;position:relative;}
 #works .gallery .trabajo .link{width:100%;height:100%;display:block;position:absolute;top:0;left:0;}
 
 /** selector **/

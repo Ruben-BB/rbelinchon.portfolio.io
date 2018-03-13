@@ -1,6 +1,6 @@
 /**image-banner**/
 .mainbodier .bodier #image-banner article:before{content:"";display:block;height:100%;width:100%;max-width:140rem;background-image:url("../i/image-wrapper_bg.png");background-size:cover;position:absolute;top:0;left:50%;-webkit-transform:translate(-50%,0);transform:translate(-50%,0);z-index:1;}
-.mainbodier .bodier #image-banner h3{color:#fff;font-size:4.4em;font-weight:300;letter-spacing:.1rem;padding:2rem 0;}
+.mainbodier .bodier #image-banner h3{color:#fff;font-size:4.4em;font-weight:300;letter-spacing:.1rem;padding:2rem 0;z-index:1;}
 .mainbodier .bodier #image-banner .gridBox{padding:0;z-index:1;}
 .mainbodier .bodier #image-banner .gridBox .c_50:last-child{float:none;}
 .mainbodier .bodier #image-banner .gridBox .mediaBox{text-align:right;}

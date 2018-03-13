@@ -8,8 +8,8 @@
 #contact form input{background:transparent;border:none;color:#FFDB90;font-size:2.4rem;width:100%;cursor:text;}
 #contact form input::placeholder{color:rgba(255,219,144,.4);}
 
-#contact form input[type="submit"]{color:#FFDB90;background:rgba(255,255,255,.2);font-size:1.4rem;font-weight:600;line-height:3rem;text-align:center;width:8rem;display:inline-block;border-radius:.6rem;position:relative;right:-2.5rem;bottom:-2.5rem;cursor:pointer;-webkit-appearance:none;}
-#contact form input[type="submit"]:hover{color:#fff;background:rgba(255,219,144,.4);}
+#contact form button{color:#FFDB90;background:rgba(255,255,255,.2);font-size:1.4rem;font-weight:600;line-height:3rem;text-align:center;width:8rem;display:inline-block;border-radius:.6rem;position:relative;right:-2.5rem;bottom:-2.5rem;cursor:pointer;border:none;-webkit-appearance:none;}
+#contact form button:hover{color:#fff;background:rgba(255,219,144,.4);}
 
 /*datos*/
 .mainbodier .bodier section#contact h3{text-align:left;font-weight:300;}

@@ -1,13 +1,13 @@
 ﻿<!DOCTYPE html>
 <html>
 	<head>
-		<title>Portfolio 2.0</title>
+		<title>Portfolio - Rubén Belinchón</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="canonical" href="rubenbelinchon.com">
+		<link rel="canonical" href="ruben-bb.github.io">
 		<meta property="og:locale" content="es_ES">
 		<meta property="og:type" content="website">
-		<meta property="og:site_name" content="rubenbelinchon.com">
+		<meta property="og:site_name" content="ruben-bb.github.io">
 		<link href="css/general.css" rel="stylesheet" type="text/css">
 		
 		<Link  rel = "apple-touch-icon"  size = "57x57"  href = "icon/apple-icon-57x57.png" > 
@@ -27,6 +27,22 @@
 		<meta  name ="Msapplication-TileColor"  content = "#ffffff" > 
 		<meta  name = "msapplication-TileImage"  content = "icon/ms-icon-144x144.png" > 
 		<meta  name = "theme-color"  content = "#ffffff" >
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115603660-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-115603660-1');
+		</script>
+		<!-- FIN Global site tag (gtag.js) - Google Analytics -->
+		
+		<!-- Email.JS -->
+		<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+		<script type="text/javascript">(function(){emailjs.init("user_bee1hjhng4HL2rklg5aKU");})();</script>
+		<!-- FIN Email.JS -->
 		
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.full.min.js"></script>
 		<script src="//static.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js"></script>
@@ -335,12 +351,12 @@
 					<article>
 						<h2>Contacto</h2>
 						<div class="gridBox c100">
-							<form method="post">
+							<form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbw2sDc6Ggq5Kr1-fI_gGlnjkET0uRxP1DRJZyxo8GAML9ul_e5C/exec">
 								<div class="c100">
-									<div class="c_40"><input type="text" name="nombre" id="campoNombre" placeholder="Nombre"></input></div>
-									<div class="c_60"><input type="text" name="email" id="campoEmail" placeholder="Correo"></input></div>
-									<div class="c_90"><input type="text" name="comentarios" id="campoMensaje" placeholder="Mensaje"></input></div>
-									<input type="submit" value="Enviar " onclick="enviar();"></input>
+									<div class="c_40"><input type="text" name="name" id="name" placeholder="Nombre"></input></div>
+									<div class="c_60"><input type="email" name="email" id="email" placeholder="Correo"></input></div>
+									<div class="c_90"><input type="text" name="message" id="message" placeholder="Mensaje"></input></div>
+									<button>Enviar</button>
 								</div>
 							</form>
 							<div class="c100">
@@ -385,5 +401,7 @@
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/form-and-animate.js"></script>
 	<script src="js/infografia.js"></script>
+	
+	<script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
 	</body>
 </html>

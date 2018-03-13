@@ -8,13 +8,13 @@ a{text-decoration:none;}
 ul,li{list-style:none;}
 
 [class*="c_"]{display:inline-block;vertical-align:top;}
-.c100{width:100%;/* float:left; */}
+.c100{width:100%;}
 .c_90{width:90%;float:left;}
 .c_80{width:80%;float:left;}
 .c_60{width:60%;float:left;}
 .c_50{width:50%;float:left;}
 .c_40{width:40%;float:left;}
-.c_33{width:33.3333%;/* float:left; */}
+.c_33{width:33.3333%;}
 .c_20{width:20%;float:left;}
 
 .gridBox, .grid{position:relative;padding:2rem;}
@@ -22,7 +22,6 @@ ul,li{list-style:none;}
 /*cabecera*/
 header{height:9.5rem;width:100%;background:#fff;border-bottom:.2rem solid #ffdb90;position:fixed;top:0;left:0;z-index:3;}
 header h1{height:100%;width:100%;max-width:120rem;margin:0 auto;position:relative;}
-/*header h1 a{display:block;height:100%;}*/
 header h1 img{height:6.5rem;width:auto;position:absolute;top:50%;left:50%;margin-top:-3.25rem;margin-left:-3.0133rem;}
 header h1 .infoBox{position:absolute;top:50%;left:10rem;margin-top:-1.85rem;}
 header h1 .infoBox li{font-size:2.2rem;color:#4d4d4d;letter-spacing:.2rem;}
@@ -53,21 +52,21 @@ nav label:before{top:1rem;left:.5rem;}
 nav #menu_list:checked ~ label:after{bottom:1.4rem;transform:rotate(-45deg);filter:invert(1);}
 nav #menu_list:checked ~ label:before{top:1.4rem;transform:rotate(45deg);filter:invert(1);}
 
-nav label ul{width:100%;height:100%;background:rgba(0,0,0,.85);border-top:9.5rem solid transparent;position:fixed;top:0;left:-100%;z-index:1;}
+nav label ul{width:100%;height:100%;background:rgba(27,33,33,.85);border-top:9.5rem solid transparent;border-bottom:9.5rem solid transparent;position:fixed;top:0;left:-100%;z-index:1;}
 nav #menu_list:checked ~ label ul{left:0;}
-nav label ul li{display:table;width:100%;max-width:120rem;height:16.6666%;text-align:center;margin:0 auto;}
-nav label ul li a{display:table-cell;font-size:1.8rem;color:#fff;vertical-align:middle;cursor:pointer;}
-nav label ul li a span{padding-left:2.5rem;position:relative;cursor:pointer;}
-nav label ul li a span:after{content:"\f120";display:block;width:2rem;height:2rem;font-family:FontAwesome;text-align:center;position:absolute;top:50%;margin-top:-1rem;left:0;}
+nav label ul li{display:table;width:100%;max-width:112.5rem;height:16.6666%;min-height:6rem;text-align:left;margin:0 auto;background:#313638;border-left:.6rem solid #ffdb90;}
+nav label ul li:not(:last-child) a{border-bottom:.1rem solid #acacac;}
+nav label ul li a{display:table-cell;font-size:2.2rem;color:#fff;padding-left:5vw;vertical-align:middle;cursor:pointer;}
+nav label ul li a span{position:relative;cursor:pointer;}
 
 /*cuerpo*/
-.mainbodier{display:block;/* margin:0 auto; */width:100%;height:100%;/*max-width:120rem;*/}
-.mainbodier .bodier{width:100%;height:100%;padding-top:9.5rem;/* float:left; */box-shadow:0 0 1.5rem -0.5rem rgba(0,0,0,.7);}
+.mainbodier{display:block;width:100%;height:100%;}
+.mainbodier .bodier{width:100%;height:100%;padding-top:9.5rem;box-shadow:0 0 1.5rem -0.5rem rgba(0,0,0,.7);}
 .mainbodier .bodier .striplayer{max-width:100%;}
 .mainbodier .striplayer h2, .mainbodier .striplayer .gridBox{max-width:120rem;margin:0 auto;color:#fff;}
 
 .mainbodier .bodier section{padding:2rem 0;padding-top:9.5rem;margin:0 auto;margin-top:-9.5rem;display:flex;width:100%;max-width:120rem;}
-.mainbodier .bodier section article{width:100%;/* float:left; */position:relative;clear:both;}
+.mainbodier .bodier section article{width:100%;position:relative;clear:both;}
 
 .mainbodier .bodier section h2:after{content:"\f120";display:block;width:2rem;height:2rem;font-family:FontAwesome;font-weight:100;text-align:center;position:absolute;top:50%;margin-top:-1rem;left:0;}
 .mainbodier .bodier section h2{font-size:2rem;font-weight:600;position:relative;}
