@@ -20,3 +20,33 @@
 
 #contact .grid .txtBox p{font-size:1.4rem;}
 #contact .grid .txtBox p .marked{font-weight:700;color:#FFDB90;}
+
+/*mensaje enviado*/
+.msg{width:100%;max-width:45.2rem;background:#cbf3cf;position:relative;overflow:hidden;height:0;box-shadow:0 0 1.6em -0.2em rgba(0,0,0,0.7);-moz-box-shadow:0 0 2em -0.75em rgba(0,0,0,0.5);-webkit-transform:scale(0,0);transform:scale(0,0);z-index:-3;}
+.msg.send_on{height:auto;padding:2rem 3rem;position:fixed;top:50%;left:50%;animation:alert 2s linear;z-index:2;}
+
+.msg:after{content:"";width:calc(100% - 2.4rem);height:calc(100% - 2.4rem);display:block;border:.2rem dashed #8EF299;position:absolute;top:1rem;left:1rem;}
+
+.msg p{font-size:2rem;line-height:3rem;color:#424242;}
+
+/*anima*/
+@-webkit-keyframes alert{
+0%  {-webkit-transform-origin:center center;-webkit-transform:translate(-50%,-50%) scale(0,0);}
+10% {-webkit-transform-origin:center center;-webkit-transform:translate(-50%,-50%) scale(1,1);}
+90% {-webkit-transform-origin:center center;-webkit-transform:translate(-50%,-50%) scale(1,1);}
+100%{-webkit-transform-origin:center center;-webkit-transform:translate(-50%,-50%) scale(0,0);}
+}
+
+@-moz-keyframes alert{
+0%  {-moz-transform-origin:center center;-moz-transform:translate(-50%,-50%) scale(0,0);}
+10% {-moz-transform-origin:center center;-moz-transform:translate(-50%,-50%) scale(1,1);}
+90% {-moz-transform-origin:center center;-moz-transform:translate(-50%,-50%) scale(1,1);}
+100%{-moz-transform-origin:center center;-moz-transform:translate(-50%,-50%) scale(0,0);}
+}
+
+@keyframes alert{
+0%  {transform-origin:center center;transform:translate(-50%,-50%) scale(0,0);}
+10% {transform-origin:center center;transform:translate(-50%,-50%) scale(1,1);}
+90% {transform-origin:center center;transform:translate(-50%,-50%) scale(1,1);}
+100%{transform-origin:center center;transform:translate(-50%,-50%) scale(0,0);}
+}

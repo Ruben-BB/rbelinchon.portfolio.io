@@ -39,11 +39,6 @@
 		</script>
 		<!-- FIN Global site tag (gtag.js) - Google Analytics -->
 		
-		<!-- Email.JS -->
-		<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-		<script type="text/javascript">(function(){emailjs.init("user_bee1hjhng4HL2rklg5aKU");})();</script>
-		<!-- FIN Email.JS -->
-		
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.full.min.js"></script>
 		<script src="//static.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js"></script>
 	</head>
@@ -351,6 +346,13 @@
 					<article>
 						<h2>Contacto</h2>
 						<div class="gridBox c100">
+							
+							<div id="msgSend" class="msg">
+								<p>Su mensaje ha sido enviado correctamente.</p>
+								<p>Le responderé a la mayor brevedad posible.</p>
+								<p>Gracias.</p>
+							</div>
+							
 							<form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbw2sDc6Ggq5Kr1-fI_gGlnjkET0uRxP1DRJZyxo8GAML9ul_e5C/exec">
 								<div class="c100">
 									<div class="c_40"><input type="text" name="name" id="name" placeholder="Nombre"></input></div>
@@ -359,6 +361,7 @@
 									<button>Enviar</button>
 								</div>
 							</form>
+
 							<div class="c100">
 								<h3>Datos personales</h3>
 								<div class="grid c_33">
@@ -402,6 +405,6 @@
 	<script src="js/form-and-animate.js"></script>
 	<script src="js/infografia.js"></script>
 	
-	<script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+	<script data-cfasync="false" type="text/javascript" src="./js/form-submission-handler.js"></script>
 	</body>
 </html>
