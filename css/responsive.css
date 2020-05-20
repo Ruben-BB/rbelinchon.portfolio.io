@@ -3,9 +3,9 @@
 .c_40{width:35%;}
 .c_60{width:65%;}
 
-.gridBox, .grid{padding:1rem;}
+.gridBox,.grid{padding:1rem;}
 
-.mainbodier .bodier section .txtBox p{font-size:1.4rem;padding-bottom:1rem;}
+.mainbodier .bodier section .txtBox p,.mainbodier .bodier section .txtBox li{font-size:1.4rem;padding-bottom:1rem;}
 
 /*image-banner*/
 .mainbodier .bodier #image-banner .gridBox .txtBox p{font-size:2.8em;}
@@ -14,7 +14,7 @@
 /*intro*/
 .mainbodier #home .mediaBox .pantalla input{top:14%;}
 .mainbodier #home .mediaBox .pantalla .be_on-off{width:64%;height:58%;top:21%;left:18%;overflow:hidden;}
-.mainbodier #home .mediaBox .pantalla input + .boton,
+.mainbodier #home .mediaBox .pantalla input ~ .boton,
 .mainbodier .bodier section .mediaBox .pantalla img{animation:none;opacity:0;}
 
 .mainbodier #home .mediaBox .pantalla:after{content:"";height:100%;width:100%;background-image:url(../i/ipad.png);background-size:100% auto;position:absolute;top:0;left:0;}
@@ -57,30 +57,30 @@
 
 /*contact*/
 #contact .grid .txtBox p{font-size:1.4vw;}
+#contact form input[type="submit"],#contact form button{right:0;}
 }
 
 @media (max-width:730px){
 div[class*="c_"]{width:100%;}
-.gridBox, .grid{padding:1rem 0;}
+.gridBox,.grid{padding:1rem 0;}
 
 header{height:5rem;}
 header h1 img {height:3.5rem;margin-top:-1.75rem;margin-left:-1.6219rem;}
 header h1 .infoBox{clip:rect(0,0,0,0);position:absolute;top:-100%;left:-100%;overflow:hidden;}
-nav label{top:-2.5rem;}
+header h1 a[title^="Portfolio"]:after{content:"Pf";font-size:1.4rem;line-height:3rem;width:3rem;text-align:center;color:#686868;background:#f2f2f2;display:inline-block;position:absolute;top:50%;left:3rem;margin-top:-1.5rem;}
+nav label{top:-2.4rem;}
 
 .mainbodier .bodier{padding-top:5rem;}
 .mainbodier .bodier section{padding:0 2rem;padding-top:5rem;margin-top:-5rem;padding-bottom:2rem;}
 .mainbodier .bodier section.striplayer{padding-left:0;padding-right:0;}
 .mainbodier .bodier section.striplayer article{padding:0 2rem;}
-.mainbodier .bodier section .txtBox p{font-size:1.2rem;}
+.mainbodier .bodier section .txtBox p,.mainbodier .bodier section .txtBox li{font-size:1.2rem;}
 
 /*image-banner*/
 #image-banner .c_50:first-child{display:none;}
 .mainbodier .bodier #image-banner article:before{background-size:200%;background-position:center;}
-.self{max-width:28rem;display:block;margin:0 auto;float:none;position:relative;}
-.self:before{right:80%;}
-.self:after{right:-20%;}
-.self img{-webkit-transform:translate(0,-50%);transform:translate(0,-50%);}
+.self{max-width:24rem;/* padding-top:24rem; */display:block;margin:0 auto;float:none;position:relative;right:0;}
+.self img{/* -webkit-transform:translate(0,-50%) skew(-10deg); *//* transform:translate(-50%,-50%) skew(-10deg); */}
 
 /*intro*/
 .mainbodier #home .txtBox{padding:1rem 2rem;border-left:0;border-top:.1rem solid #ccc;}

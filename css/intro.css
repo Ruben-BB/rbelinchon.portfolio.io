@@ -1,12 +1,14 @@
 /**image-banner**/
-.mainbodier .bodier #image-banner article:before{content:"";display:block;height:100%;width:100%;max-width:140rem;background-image:url("../i/image-wrapper_bg.png");background-size:cover;position:absolute;top:0;left:50%;-webkit-transform:translate(-50%,0);transform:translate(-50%,0);z-index:1;}
-.mainbodier .bodier #image-banner h3{color:#fff;font-size:4.4em;font-weight:300;letter-spacing:.1rem;padding:2rem 0;z-index:1;}
-.mainbodier .bodier #image-banner .gridBox{padding:0;z-index:1;}
-.mainbodier .bodier #image-banner .gridBox .c_50:last-child{float:none;}
+.mainbodier .bodier .banner article:before{content:"";display:block;height:100%;width:100%;max-width:140rem;background-image:url("../i/image-wrapper_bg.png");background-size:cover;position:absolute;top:0;left:50%;-webkit-transform:translate(-50%,0);transform:translate(-50%,0);z-index:1;}
+.mainbodier .bodier .banner h2,
+.mainbodier .bodier .banner h3{color:#fff;font-size:4.4em;font-weight:300;letter-spacing:.1rem;padding:2rem 0;z-index:1;}
+.mainbodier .bodier .banner .gridBox{padding:0;z-index:1;}
+.mainbodier .bodier .banner .gridBox .c_50:last-child{float:none;}
+.mainbodier .bodier .banner .gridBox .mediaBox{text-align:center;}
 .mainbodier .bodier #image-banner .gridBox .mediaBox{text-align:right;}
-.mainbodier .bodier #image-banner .gridBox .mediaBox img{max-height:16.9rem;}
-.mainbodier .bodier #image-banner .gridBox .txtBox p{font-size:3.6em;line-height:1.2;font-weight:600;padding-left:4rem;position:relative;}
-.mainbodier .bodier #image-banner .gridBox .txtBox p:after{content:">";position:absolute;top:0;left:0;}
+.mainbodier .bodier .banner .gridBox .mediaBox img{max-height:16.9rem;}
+.mainbodier .bodier .banner .gridBox .txtBox p{font-size:3.6em;line-height:1.2;font-weight:600;padding-left:4rem;position:relative;}
+.mainbodier .bodier .banner .gridBox .txtBox p:after{content:">";position:absolute;top:0;left:0;}
 
 /**intro**/
 .mainbodier #home .txtBox{padding:2rem;border-left:.1rem solid #ccc;}
@@ -14,14 +16,17 @@
 .mainbodier #home .mediaBox .pantalla{position:relative;float:left;z-index:2;}
 
 .mainbodier #home .mediaBox .pantalla input{height:72%;width:76%;position:absolute;top:8%;left:12%;cursor:pointer;opacity:0;z-index:2;}
-.mainbodier #home .mediaBox .pantalla input + .boton{width:4.72%;height:6.495%;background:url(../i/off.png) no-repeat center center;background-size:cover;display:block;position:absolute;top:75%;left:50%;margin-top:-2.36%;margin-left:-2.36%;animation:on 2s infinite;z-index:1;}
-.mainbodier #home .mediaBox .pantalla input:checked + .boton{background-image:url(../i/on.png);animation:none;}
+.mainbodier #home .mediaBox .pantalla input ~ .boton{width:4.72%;height:6.495%;background:url(../i/off.png) no-repeat center center;background-size:cover;display:block;position:absolute;top:75%;left:50%;margin-top:-2.36%;margin-left:-2.36%;animation:on 2s infinite;z-index:1;}
+.mainbodier #home .mediaBox .pantalla input:checked ~ .boton{background-image:url(../i/on.png);animation:none;}
 
 .mainbodier #home .mediaBox .pantalla .be_on-off{width:69.5%;height:54%;background:#1a1a1a;display:block;position:absolute;top:11.5%;left:15.25%;z-index:-1;}
 .mainbodier #home .mediaBox .pantalla input:checked ~.be_on-off{background:#4a9ae2;}
 
 .mainbodier #home .mediaBox .pantalla input ~.be_on-off:after{content:"";background:url(../i/monitor-contenido.png) no-repeat center top;position:absolute;background-size:cover;top:0;left:0;width:100%;height:100%;-webkit-transform:scale(0,0);transform:scale(0,0);-webkit-transition:0s all linear;transition:0s all linear;}
 .mainbodier #home .mediaBox .pantalla input:checked ~.be_on-off:after{-webkit-transform:scale(1,1);transform:scale(1,1);-webkit-transition:.3s all linear;transition:.3s all linear;-webkit-transition-delay:.5s;transition-delay:.5s;}
+
+.mainbodier #home .mediaBox .pantalla .ghost{clip:auto;z-index:0;}
+.mainbodier #home .mediaBox .pantalla input:not(:checked) ~ .ghost:before{content:"fingerprint";color:#ab6060;font-size:5rem;font-weight:300;width:5rem;line-height:5rem;text-align:center;font-family:"Material Icons";position:absolute;top:50%;left:50%;margin-top:-2.5rem;margin-left:-2.5rem;animation:on 4s infinite linear;}
 
 /*anima*/
 @-webkit-keyframes on{

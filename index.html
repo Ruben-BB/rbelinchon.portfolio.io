@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="es">
 	<head>
 		<title>Portfolio - Rubén Belinchón</title>
 		<meta charset="UTF-8">
@@ -10,23 +10,16 @@
 		<meta property="og:site_name" content="ruben-bb.github.io">
 		<link href="css/general.css" rel="stylesheet" type="text/css">
 		
-		<Link  rel = "apple-touch-icon"  size = "57x57"  href = "icon/apple-icon-57x57.png" > 
-		<link  rel = "apple-touch-icon"  size = "60x60"  href = "icon/ apple -icon-60x60.png" > 
-		<link  rel = "apple-touch-icon"  tamaños = "" 72x72  href = "" icon/apple-icon-72x72.png > 
-		<link  rel = "" apple-touch-icon  tamaños = "76x76"  href = "icon/apple-icon-76x76.png" > 
-		<link  rel = "Apple-touch-icon  "size = " 114x114 "  href = " icon/apple-icon-114x114.png "> 
-		<Link  rel = "apple-touch-icon"  size = "120x120"  href = "icon/apple-icon-120x120.png" > 
-		<link  rel = "apple-touch-icon  " size = "144x144"  href = "icon/ apple-icono-144x144.png" > 
-		<link  rel = "apple-touch-icon"  tamaños = "152x152"  href = "icon/apple-icon-152x152.png" > 
-		<link  rel = "apple-touch-icon"  tamaños = "180x180"  href = "icon/apple-icon-180x180.png" > 
-		<Link  rel = "icon"  = "image / png  " size = "192x192"  href = "icon/android-icon-192x192.png" > 
-		<link  rel = "icono"  type = "image / png"  tamaños = "32x32"  href = "icon/favicon-32x32.png" > 
-		<link  rel = "icono"  type = "image / png"  tamaños = "96x96"  href = "icon/favicon-96x96.png" > 
-		<link  rel = "icono"  type = "image / png"  tamaños = "16x16"  href = "icon/ favicon-16x16. Png " > 
-		<link  rel = " manifest " Href = "icon/manifest.json" > 
-		<meta  name ="Msapplication-TileColor"  content = "#ffffff" > 
-		<meta  name = "msapplication-TileImage"  content = "icon/ms-icon-144x144.png" > 
-		<meta  name = "theme-color"  content = "#ffffff" >
+		<link  rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png" > 
+		<meta  name="Msapplication-TileColor" content="#ffffff" > 
+		<meta  name="msapplication-TileImage" content="icon/ms-icon-144x144.png" > 
+		<meta  name="theme-color" content="#ffffff" >
+		
+		<!-- cookies -->
+		<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+		<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+		<script src="js/cookies.js"></script>
+		<!-- FIN cookies -->
 		
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115603660-1"></script>
@@ -46,36 +39,42 @@
 	<!-- HEADER -->
 		<header>
 			<h1>
-				<a href="#top">
-					<img src="./i/header_logo.png" title="Portfolio de Rubén Belinchón Banegas" />
+				<a title="ancla a parte superior del portfolio de Rubén Belinchón" href="#top">
+					<img src="./i/header_logo.png" title="Portfolio de Rubén Belinchón Banegas - Imagen de logo para portfolio" />
+				</a>
+				<a href="http://ruben-bb.github.io" title="Portfolio de Rubén Belinchón Banegas - Enlace al portfolio">
 					<ul class="infoBox">
 						<li>Rubén Belinchón</li>
 						<li>Diseñador Gráfico - Maquetador Web</li>
 					</ul>
 				</a>
-				<ul class="socialBox">
-					<input type="checkbox" name="social" value="social" id="social"></input>
+				<div class="socialBox">
+					<input type="checkbox" name="social" value="social" id="social" />
 					<label for="social">
-						<li><a title="enlace a perfil de Rubén Belinchón de Google +" class="gplus" target="_blank" href="https://plus.google.com/103690862917929309738"></a></li>
-						<li><a title="enlace a perfil de Rubén Belinchón de LinkedIn" class="linke" target="_blank" href="https://www.linkedin.com/in/rub%C3%A9n-belinch%C3%B3n-banegas/"></a></li>
-						<li><a title="enlace a perfil de Rubén Belinchón de Infojobs" class="infoj" target="_blank" href="https://www.infojobs.net/ruben-belinchon.prf"></a></li>
+						<ul>
+							<li><a class="gplus" target="_blank" title="enlace a perfil de Rubén Belinchón de Google+" href="https://plus.google.com/103690862917929309738"><span class="ghost">Enlace a perfil en Google+</span></a></li>
+							<li><a class="linke" target="_blank" title="enlace a perfil de Rubén Belinchón de LinkedIn" href="https://www.linkedin.com/in/rub%C3%A9n-belinch%C3%B3n-banegas/"><span class="ghost">Enlace a perfil de LinkedIn</span></a></li>
+							<li><a class="infoj" target="_blank" title="enlace a perfil de Rubén Belinchón de Infojobs" href="https://www.infojobs.net/ruben-belinchon.prf"><span class="ghost">Enlacce a perfil en Infojobs</span></a></li>
+						</ul>
 					</label>
-				</ul>
+				</div>
 			</h1>
 			
 		<!-- NAVEGACION -->
 			<nav>
+				<fieldset>
 				<input type="checkbox" class="menu_list" id="menu_list">
-				<label for="menu_list">
-					<ul>
-						<li><a href="#home" onclick="menu_off();"><span>Home</span></a></li>
-						<li><a href="#about" onclick="menu_off();"><span>Sobre mí</span></a></li>
-						<li><a href="#works" onclick="menu_off();"><span>Mis trabajos</span></a></li>
-						<li><a href="#experiencia" onclick="menu_off();"><span>Experiencia</span></a></li>
-						<li><a href="#skills" onclick="menu_off();"><span>Conocimientos</span></a></li>
-						<li><a href="#contact" onclick="menu_off();"><span>Contacto</span></a></li>
-					</ul>
-				</label>
+					<label for="menu_list">
+						<ul>
+							<li><a title="ancla a sección de 'introducción' en el portfolio de Rubén Belinchón" href="#home" onclick="menu_off();"><span>Home</span></a></li>
+							<li><a title="ancla a sección de 'sobre mí' en el portfolio de Rubén Belinchón" href="#about" onclick="menu_off();"><span>Sobre mí</span></a></li>
+							<li><a title="ancla a sección de 'trabajos' en el portfolio de Rubén Belinchón" href="#works" onclick="menu_off();"><span>Mis trabajos</span></a></li>
+							<li><a title="ancla a sección de 'habilidades' en el portfolio de Rubén Belinchón" href="#experiencia" onclick="menu_off();"><span>Experiencia</span></a></li>
+							<li><a title="ancla a sección de 'conocimientos' en el portfolio de Rubén Belinchón" href="#skills" onclick="menu_off();"><span>Conocimientos</span></a></li>
+							<li><a title="ancla a sección de 'contacto' en el portfolio de Rubén Belinchón" href="#contact" onclick="menu_off();"><span>Contacto</span></a></li>
+						</ul>
+					</label>
+				</fieldset>
 			</nav>
 		<!-- NAVEGACION END -->
 		</header>
@@ -85,13 +84,13 @@
 		<main id="top" class="mainbodier">
 			<div class="bodier">
 				
-				<section id="image-banner" class="striplayer">
+				<section id="image-banner" class="banner striplayer">
 					<article>
 						<h3>Portfolio Web</h3>
 						<div class="gridBox c100">
 							<div class="grid c_50">
 								<div class="mediaBox">
-									<img src="./i/image-wrapper_aux.png" title="líneas, imagen auxiliar de apertura de portada"/>
+									<img src="./i/image-wrapper_aux.png" title="líneas, imagen auxiliar de apertura de portada" alt="líneas, imagen auxiliar de apertura de portada" />
 								</div>
 							</div>
 							
@@ -112,25 +111,28 @@
 						<div class="gridBox c100">
 							<div class="grid c_40">
 								<div class="mediaBox">
-									<span class="pantalla">
-										<input type="checkbox"></input>
-										<span class="boton"></span>
-										<div class="be_on-off"></div>
-										<img src="i/monitor.png" title="pantalla"/>
-									</span>
+									<div class="pantalla">
+										<fieldset>
+											<input title="Botón para lanzar animación con efectos de un monitor con la web" id="btn" type="checkbox" />
+											<label class="ghost" for="btn">Activar animación</label>
+											<span class="boton"></span>
+											<div class="be_on-off"></div>
+											<img src="i/monitor.png" title="pantalla" alt="pantalla/monitor"/>
+										</fieldset>
+									</div>
 								</div>
 							</div>
 							
-						<div class="grid c_60">
-							<div class="txtBox">
-								<p>Aquí están recogidos todos los trabajos que he realizado, ya sean para blogs, cómo en las empresas en las que he estado, incluyendo trabajos propios. Todos los trabajos que están aquí expuestos son de libre acceso.</p>
-								<p>En ésta web tendrá fácil acceso a los conocimientos y aptitudes que he ido obteniendo, además encontrará información relacionada con mi perfil profesional.</p>
-								<p>Este sitio web es totalmente responsive, por lo que se puede visualizar en cualquier tipo de pantalla/dispositivo. </p>
-								<p>La información aquí recogida irá siendo actualizada con la mayor frecuencia posible.</p>
-								<p>Espero que encuentre en esta web todo lo que necesita saber.</p>
-								<p>Gracias por su visita.</p>
+							<div class="grid c_60">
+								<div class="txtBox">
+									<p>Aquí están recogidos todos los trabajos que he realizado, ya sean para blogs, cómo en las empresas en las que he estado, incluyendo trabajos propios. Todos los trabajos que están aquí expuestos son de libre acceso.</p>
+									<p>En ésta web tendrá fácil acceso a los conocimientos y aptitudes que he ido obteniendo, además encontrará información relacionada con mi perfil profesional.</p>
+									<p>Este sitio web es totalmente responsive, por lo que se puede visualizar en cualquier tipo de pantalla/dispositivo. </p>
+									<p>La información aquí recogida irá siendo actualizada con la mayor frecuencia posible.</p>
+									<p>Espero que encuentre en esta web todo lo que necesita saber.</p>
+									<p>Gracias por su visita.</p>
+								</div>
 							</div>
-						</div>
 						</div>
 					</article>
 				</section>
@@ -145,8 +147,8 @@
 									<p>La mayoría de los trabajos que he realizado han sido en labores de productos para su posterior impresión; sin embargo en los últimos meses me he ido redefiniendo y adaptando para poder elaborar diseños adaptados para páginas web. Además he ido obteniendo experiencia cómo trazador, revisor de texto, maquetador, y programador.</p>
 								</div>
 							</div>
-							<div class="c_40 self">
-								<img src="./i/about.png" title="Rubén Belinchón"/>
+							<div class="c_30 self">
+								<img src="./i/about.png" title="Rubén Belinchón" alt="imagen de Rubén Belinchón"/>
 							</div>
 						</div>
 					</article>
@@ -155,29 +157,29 @@
 				<section id="works">
 					<article>
 						<h2>Trabajos</h2>
-						<div class="gridBox c100">
-							<input type="radio" name="itemtag" value="all" id="all" checked></input>
+						<fieldset class="gridBox c100">
+							<input type="radio" name="itemtag" value="all" id="all" checked />
 							<label class="tag" for="all">Todo</label>
-							<input type="radio" name="itemtag" value="fp" id="fp"></input>
+							<input type="radio" name="itemtag" value="fp" id="fp" />
 							<label class="tag" for="fp">FP</label>
-							<input type="radio" name="itemtag" value="sp" id="sp"></input>
+							<input type="radio" name="itemtag" value="sp" id="sp" />
 							<label class="tag" for="sp">SystemPorsche</label>
-							<input type="radio" name="itemtag" value="dr" id="dr"></input>
+							<input type="radio" name="itemtag" value="dr" id="dr" />
 							<label class="tag" for="dr">Droide Ratón</label>
-							<input type="radio" name="itemtag" value="dtc" id="dtc"></input>
+							<input type="radio" name="itemtag" value="dtc" id="dtc" />
 							<label class="tag" for="dtc">Dóname tu coche</label>
-							<input type="radio" name="itemtag" value="other" id="other"></input>
+							<input type="radio" name="itemtag" value="other" id="other" />
 							<label class="tag" for="other">Otros</label>
 							
-							<input type="radio" name="itemlist" value="mosaic" id="mosaic" checked></input>
+							<input type="radio" name="itemlist" value="mosaic" id="mosaic" checked />
 							<label class="tag" for="mosaic"></label>
-							<input type="radio" name="itemlist" value="list" id="list"></input>
+							<input type="radio" name="itemlist" value="list" id="list" />
 							<label class="tag" for="list"></label>
 							
 							<div id="gallery" class="gallery">
-								
+								<!-- Infografía con trabajos -->
 							</div>
-						</div>
+						</fieldset>
 					</article>
 				</section>
 
@@ -186,19 +188,19 @@
 						<h2>Experiencia</h2>
 						<div class="gridBox c_33">
 							<h4>Maquetación / Desarrollo</h4>
-							<ul>
+							<ul class="grid">
 								<li class="titBox">Hiberus Tecnología</li>
 								<li class="txtBox">Maquetador Web en RTVE.es</li>
-								<li class="auxBox">Enero 2018 - Actualmente</li>
+								<li class="auxBox">Enero 2018 - Noviembre 2019</li>
 							</ul>
 							
-							<ul>
+							<ul class="grid">
 								<li class="titBox">Hispavista</li>
 								<li class="txtBox">Maquetador Web en RTVE.es</li>
 								<li class="auxBox">Diciembre 2014 - Noviembre 2017</li>
 							</ul>
 							
-							<ul>
+							<ul class="grid">
 								<li class="titBox">VIPPER English & VIPPER Sistemas</li>
 								<li class="txtBox">Maquetador y Desarrollador Web</li>
 								<li class="auxBox">Julio 2014</li>
@@ -218,7 +220,7 @@
 							</ul>
 						</div><div class="gridBox c_33">
 							<h4>Impresión</h4>
-							<ul>
+							<ul class="grid">
 								<li class="titBox">F.M.N.T. - R.C.M.</li>
 								<li class="txtBox">Oficial de 2ª(Timbre)</li>
 								<li class="auxBox">Septiembre 2013 - Diciembre 2013</li>
@@ -352,14 +354,30 @@
 								<p>Le responderé a la mayor brevedad posible.</p>
 								<p>Gracias.</p>
 							</div>
-							
+
+							<div class="legal_warning">
+								<input type="checkbox" id="warning" value="Aviso legal" />
+								<label for="warning">
+									<p>Al pulsar el botón de enviar, accederás a que recoja los datos que acabas de rellenar para poder ponerme en contacto contigo.</p>
+									<p>Esos datos serán única y exclusivamente para poder contactar con todo aquel que envíe un mensaje, como dicta el RGPD (Reglamento General de Protección de Datos). Te dejo esta información que debes saber:</p>
+									<ul>
+										<li><strong>Responsable:</strong> Rubén Belinchón Banegas</li>
+										<li><strong>Finalidad:</strong> para poder responder al mensaje que me hayas enviado</li>
+										<li><strong>Legitimación:</strong> tu consentimiento (al enviar el mensaje).</li>
+										<li><strong>Destinatarios:</strong> tus datos se guardarán en una cuenta de gmail dedicada a éste Portfolio, y con copia en un Google Drive que gestiona la recepción de los datos del formulario</li>
+										<li><strong>Derechos:</strong> por supuesto tendrás derecho a, limitar tus datos, modificarlos, o borrarlos</li>
+									</ul>
+									<p>Si lo desea puede consultar la <a target="_blank" title="enlace a Política de privacidad" href="politica-privacidad.html">Pol&iacute;tica de privacidad</a> a través del enlace</p>
+								</label>
+							</div>
+
 							<form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbw2sDc6Ggq5Kr1-fI_gGlnjkET0uRxP1DRJZyxo8GAML9ul_e5C/exec">
-								<div class="c100">
-									<div class="c_40"><input type="text" name="name" id="name" placeholder="Nombre"></input></div>
-									<div class="c_60"><input type="email" name="email" id="email" placeholder="Correo"></input></div>
-									<div class="c_90"><input type="text" name="message" id="message" placeholder="Mensaje"></input></div>
-									<button>Enviar</button>
-								</div>
+								<fieldset class="c100">
+									<div class="c_40"><label class="ghost" for="name">Nombre:</label><input title="Introduzca su nombre" type="text" name="name" id="name" placeholder="Nombre" required /></div>
+									<div class="c_60"><label class="ghost" for="email">Correo:</label><input title="Su correo electrónico" type="email" name="email" id="email" placeholder="Correo" required /></div>
+									<div class="c_90"><label class="ghost" for="message">Mensaje:</label><input title="Mensaje o comentario para envíar" type="text" name="message" id="message" placeholder="Mensaje" required /></div>
+									<input type="submit" value="Enviar" />
+								</fieldset>
 							</form>
 
 							<div class="c100">
@@ -391,10 +409,10 @@
 
 	<!-- FOOTER -->
 		<footer>
-			<p>Todos los derechos reservados - 2018 ©</p>
+			<p>Todos los derechos reservados - 2020 ©</p>
 		</footer>
 	<!-- FOOTER END -->
-	<script type="text/javascript">
+	<script>
 		function menu_off(){
 		  var menu=document.getElementById("menu_list");
 			 menu.checked=0;
@@ -405,6 +423,6 @@
 	<script src="js/form-and-animate.js"></script>
 	<script src="js/infografia.js"></script>
 	
-	<script data-cfasync="false" type="text/javascript" src="./js/form-submission-handler.js"></script>
+	<script data-cfasync="false" src="./js/form-submission-handler.js"></script>
 	</body>
 </html>

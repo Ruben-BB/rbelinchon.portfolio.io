@@ -2,19 +2,20 @@
 .mainbodier .bodier #contact{padding:9.5rem 0 0 0;}
 
 /*form*/
+#contact form{border-top:.1rem solid #191919;margin-top:1rem;}
 #contact form .c100{float:left;position:relative;padding:4rem 0;}
 #contact form [class*="c_"]{position:relative;border-style:solid;border-width:2.5rem 1rem;border-color:transparent;}
 #contact form [class*="c_"]:after{content:"";height:.2rem;width:100%;display:block;background:#fff;position:absolute;bottom:-.5rem;left:0;}
 #contact form input{background:transparent;border:none;color:#FFDB90;font-size:2.4rem;width:100%;cursor:text;}
 #contact form input::placeholder{color:rgba(255,219,144,.4);}
 
-#contact form button{color:#FFDB90;background:rgba(255,255,255,.2);font-size:1.4rem;font-weight:600;line-height:3rem;text-align:center;width:8rem;display:inline-block;border-radius:.6rem;position:relative;right:-2.5rem;bottom:-2.5rem;cursor:pointer;border:none;-webkit-appearance:none;}
-#contact form button:hover{color:#fff;background:rgba(255,219,144,.4);}
+#contact form input[type="submit"],#contact form button{color:#FFDB90;background:rgba(255,255,255,.2);font-size:1.4rem;font-weight:600;line-height:3rem;text-align:center;width:8rem;display:inline-block;border-radius:.6rem;position:relative;right:-2.5rem;bottom:-2.5rem;cursor:pointer;border:none;-webkit-appearance:none;}
+#contact form input[type="submit"]:hover,#contact form button:hover{color:#fff;background:rgba(255,219,144,.4);}
 
 /*datos*/
 .mainbodier .bodier section#contact h3{text-align:left;font-weight:300;}
 #contact form + .c100{clear:both;padding-top:4rem;}
-#contact .grid{padding:2rem 0;}
+#contact .grid{padding:2rem 0;vertical-align:middle;}
 #contact form + .c100 .grid .txtBox{padding:0;text-align:center;}
 #contact form + .c100 h3 + .grid .txtBox{text-align:left;}
 
@@ -28,6 +29,21 @@
 .msg:after{content:"";width:calc(100% - 2.4rem);height:calc(100% - 2.4rem);display:block;border:.2rem dashed #8EF299;position:absolute;top:1rem;left:1rem;}
 
 .msg p{font-size:2rem;line-height:3rem;color:#424242;}
+
+/*legal_warning*/
+.legal_warning{padding-top:4rem;background:#573030;border:.3rem #ab6060 ridge;width:90%;min-width:28rem;margin:0 auto;position:relative;border-radius:.4rem .4rem 0 0;}
+.legal_warning input{width:100%;height:0;position:absolute;top:0;left:0;}
+.legal_warning input:before{content:attr(value);display:block;width:100%;font-size:2rem;line-height:4rem;text-align:center;color:#fff;background:#ab6060;position:absolute;top:-.2rem;left:-.2rem;border:.2rem solid #ab6060;}
+.legal_warning input:after{content:"expand_more";width:4rem;font-size:2.6rem;line-height:4rem;font-family:"Material Icons";text-align:center;color:#fff;position:absolute;top:0;right:0;transition:transform .2s linear;}
+.legal_warning input:checked:after{/* content:"expand_less"; */transform:rotate(180deg);}
+.legal_warning label{height:0;display:block;padding:0 4rem;overflow:hidden;-webkit-transition:all .5s linear;-moz-transition:all .5s linear;-ms-transition:all .5s linear;transition:all .5s linear;}
+.legal_warning input:checked + label{height:auto;padding:4rem;}
+
+.legal_warning p, .legal_warning li{font-size:1.4em;line-height:1.6rem;}
+.legal_warning p:not(:last-child), .legal_warning li{padding-bottom:1.6rem;}
+.legal_warning ul{padding:0 2rem;}
+.legal_warning li{padding-left:.5rem;list-style-type:decimal;}
+.legal_warning a{color:#f7931e;font-weight:600;}
 
 /*anima*/
 @-webkit-keyframes alert{

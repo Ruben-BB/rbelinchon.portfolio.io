@@ -1,23 +1,26 @@
 @import url("mosaic.css");
 
-#works input{clip:rect(0,0,0,0);position:absolute;top:-100%;left:-100%;overflow:hidden;}
+#works input{clip:rect(0,0,0,0);position:absolute;top:0;left:0;overflow:hidden;}
 #works .tag{font-size:1.2rem;padding:.5rem 1rem;color:#686868;border:.1rem solid #d3e2d7;border-radius:.4rem;float:left;margin-right:.5rem;cursor:pointer;}
 #works input[name="itemtag"]:checked + label{background:#78bb90;border:.1rem solid #78bb90;cursor:default;}
 
 #works input[name="itemlist"] + label{width:2.6rem;height:2.6rem;display:block;position:relative;float:right;border:0;}
 #works #list + label{margin-right:.5rem;}
 
-#works #list + label:after{content:"\f00b";}
-#works #mosaic + label:after{content:"\f00a";}
-#works input[name="itemlist"] + label:after{width:2.4rem;font-size:1.6rem;line-height:2.4rem;text-align:center;font-family:FontAwesome;border:.1rem solid #d3e2d7;border-radius:.4rem;position:absolute;top:0;right:0;cursor:pointer;}
+#works #list + label:after{content:"view_list";}
+#works #mosaic + label:after{content:"view_compact";}
+#works input[name="itemlist"] + label:after{width:2.4rem;font-size:2.4rem;line-height:2.4rem;text-align:center;font-family:"Material Icons";border:.1rem solid #d3e2d7;border-radius:.4rem;position:absolute;top:0;right:0;cursor:pointer;}
 #works input[name="itemlist"]:checked + label:after{border-color:#78bb90;cursor:default;}
 
 #works .gallery{padding:1rem;width:100%;float:left;}
 #works #mosaic:checked ~ .gallery{padding:2rem 0;text-align:center;}
 #works .gallery .trabajo{width:100%;padding:2rem 0;display:inline-block;border-bottom:.1rem solid #d3e2d7;position:relative;}
-#works .gallery .trabajo .link{width:100%;height:100%;display:block;position:absolute;top:0;left:0;}
+#works .gallery .trabajo .link{width:100%;height:100%;display:block;position:absolute;top:0;left:0;cursor:pointer;}
 
 /** selector **/
 #works input[id="fp"]:checked ~ .gallery .trabajo:not(.FP),#works input[id="sp"]:checked ~ .gallery .trabajo:not(.SystemPorsche),
 #works input[id="dr"]:checked ~ .gallery .trabajo:not(.droide),#works input[id="dtc"]:checked ~ .gallery .trabajo:not(.coche),
 #works input[id="other"]:checked ~ .gallery .trabajo:not(.Otros){clip:rect(0,0,0,0);position:absolute;top:-100%;left:-100%;overflow:hidden;}
+
+#works .gallery .trabajo .ima img{filter:grayscale(1);transition:all .4s ease-out;}
+#works .gallery .trabajo:hover .ima img {filter:grayscale(0);transform:translate(-50%,-50%) scale(1.2,1.2);}

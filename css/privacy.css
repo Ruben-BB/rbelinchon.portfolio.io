@@ -1,0 +1,18 @@
+/*tabla*/
+.table{width:100%;position:relative;padding:2rem 0;overflow:hidden;}
+.table h4{font-size:1.6rem;text-align:center;padding-bottom:1rem;}
+.table table{width:100%;overflow:auto;display:inline-block;border-collapse:collapse;}
+.table th,.table td{border:.1rem solid #4d4d4d;}
+
+.table th{font-weight:600;}
+.table th,.table td{padding:.5rem 2rem;text-align:left;font-size:1.6rem;}
+
+.table th:first-child,.table td:first-child{width:15%;min-width:17rem;}
+.table th:nth-child(2),.table td:nth-child(2){width:10%;min-width:13rem;}
+.table th:nth-child(3),.table td:nth-child(3){width:50%;min-width:26rem;}
+.table th:last-child,.table td:last-child{width:25%;}
+
+
+/*listas*/
+#privacy li,#cookies li{padding-left:2rem;position:relative;}
+#privacy li:before,#cookies li:before{content:"stop";text-align:center;font-family:"Material Icons";display:inline-block;width:2rem;height:2rem;line-height:1;position:absolute;top:0;left:0;-webkit-transform:rotate(45deg);transform:rotate(45deg);}

@@ -31,4 +31,4 @@
 #works #all:checked ~ #mosaic:checked ~ .gallery .trabajo:nth-child(n) .ima{padding-top:100%;}
 #works #all:checked ~ #mosaic:checked ~ .gallery .trabajo:nth-child(5n+1) .ima{padding-top:50%;}
 
-#works #mosaic:checked ~ .gallery .trabajo .ima img{height:100%;width:auto;}
+#works #mosaic:checked ~ .gallery .trabajo .ima img{width:auto;}

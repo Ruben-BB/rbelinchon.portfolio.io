@@ -35,9 +35,8 @@
 
 
 /*circulos*/
-svg circle{-webkit-transform-origin:center center;transform-origin:center center;}
 svg .fondo{fill:none;stroke-width:.8rem;stroke:#78bb90;}
-svg .recorte{fill:none;stroke-width:.8rem;stroke-dasharray:295%;stroke-dashoffset:0%;stroke:#e6e6e6;-webkit-transform:rotate(270deg) scale(1,-1);transform:rotate(270deg) scale(1,-1);transition:stroke-dashoffset 1s linear;}
+svg .recorte{fill:none;stroke-width:.8rem;stroke-dasharray:295%;stroke-dashoffset:0%;stroke:#e6e6e6;-webkit-transform:rotate(270deg) scale(1,-1);transform:rotate(270deg) scale(1,-1);-webkit-transform-origin:center center;transform-origin:center center;transition:stroke-dashoffset 1s linear;}
 
 .progress-animation.html .recorte{stroke-dashoffset:236%;}
 .progress-animation.css .recorte{stroke-dashoffset:250.75%;}

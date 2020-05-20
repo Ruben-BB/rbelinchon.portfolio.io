@@ -1,0 +1,16 @@
+/*ocultar elementos de etiquetado de forma visual*/
+.ghost{width:100%;height:100%;position:absolute;top:0;right:0;clip:rect(0,0,0,0);color:transparent;font-size: 1rem;z-index:-1;}
+
+/*formularios*/
+fieldset{border:none;}
+
+
+/* no sirve
+::-webkit-scrollbar{background:transparent;width:.6rem;border-radius:2rem;box-shadow:0 0 .5rem 0 rgba(0,0,0,.6) inset;}
+::-webkit-scrollbar-thumb{background:rgba(0,0,0,.2);border-radius:2rem;}
+
+::-moz-scrollbar{background:transparent;width:.6rem;border-radius:2rem;box-shadow:0 0 .5rem 0 rgba(0,0,0,.6) inset;}
+::-moz-scrollbar-thumb{background:rgba(0,0,0,.2);border-radius:2rem;}
+
+::scrollbar{background:transparent;width:.6rem;border-radius:2rem;box-shadow:0 0 .5rem 0 rgba(0,0,0,.6) inset;}
+::scrollbar-thumb{background:rgba(0,0,0,.2);border-radius:2rem;}*/

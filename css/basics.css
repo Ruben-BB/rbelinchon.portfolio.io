@@ -11,13 +11,17 @@ ul,li{list-style:none;}
 .c100{width:100%;}
 .c_90{width:90%;float:left;}
 .c_80{width:80%;float:left;}
+.c_70{width:70%;float:left;}
 .c_60{width:60%;float:left;}
 .c_50{width:50%;float:left;}
 .c_40{width:40%;float:left;}
 .c_33{width:33.3333%;}
+.c_30{width:30%;float:left;}
 .c_20{width:20%;float:left;}
+.c_10{width:10%;float:left;}
 
-.gridBox, .grid{position:relative;padding:2rem;}
+.gridBox,.grid{position:relative;padding:2rem;}
+.grid{padding:2rem 0;}
 
 /*cabecera*/
 header{height:9.5rem;width:100%;background:#fff;border-bottom:.2rem solid #ffdb90;position:fixed;top:0;left:0;z-index:3;}
@@ -28,15 +32,15 @@ header h1 .infoBox li{font-size:2.2rem;color:#4d4d4d;letter-spacing:.2rem;}
 header h1 .infoBox li:last-child{font-size:1rem;color:#686868;letter-spacing:.1rem;}
 
 header h1 .socialBox{height:3rem;position:absolute;top:50%;right:3rem;margin-top:-1.5rem;}
-header h1 .socialBox input, nav .menu_list{clip:rect(0,0,0,0);position:absolute;top:-100%;left:-100%;overflow:hidden;}
+header h1 .socialBox input,nav .menu_list{clip:rect(0,0,0,0);position:absolute;top:-100%;left:-100%;overflow:hidden;}
 header h1 .socialBox label{background:#f2f2f2;padding-right:3rem;width:3rem;height:100%;display:block;position:relative;right:0;overflow:hidden;transition:width .2s linear;}
-header h1 .socialBox label:after{content:"\f1e0";width:3rem;font-size:2rem;line-height:3rem;text-align:center;font-family:FontAwesome;background:#f2f2f2;position:absolute;top:0;right:0;cursor:pointer;}
+header h1 .socialBox label:after{content:"share";width:3rem;font-size:2rem;font-weight:600;line-height:3rem;text-align:center;font-family:"Material Icons";background:#f2f2f2;position:absolute;top:0;right:0;cursor:pointer;}
 
 header h1 .socialBox label li,
 header h1 .socialBox label li a{width:3rem;height:3rem;display:block;float:left;position:relative;}
-header h1 .socialBox label li a:after{width:3rem;font-size:2rem;line-height:3rem;text-align:center;font-family:FontAwesome;color:#686868;position:absolute;right:0;}
-header h1 .socialBox label li .gplus:after{content:"\f0d5";}
-header h1 .socialBox label li .linke:after{content:"\f0e1";}
+header h1 .socialBox label li a:after{width:3rem;font-size:2rem;line-height:3rem;text-align:center;color:#686868;position:absolute;right:0;}
+header h1 .socialBox label li .gplus:after{content:"G+";}
+header h1 .socialBox label li .linke:after{content:"in";font-weight:800;}
 header h1 .socialBox label li .infoj:after{content:"IJ";font-weight:bold;font-family:Encode Sans Condensed;font-style:italic;}
 
 header h1 .socialBox input:checked ~ label{width:12rem;}
@@ -63,12 +67,12 @@ nav label ul li a span{position:relative;cursor:pointer;}
 .mainbodier{display:block;width:100%;height:100%;}
 .mainbodier .bodier{width:100%;height:100%;padding-top:9.5rem;box-shadow:0 0 1.5rem -0.5rem rgba(0,0,0,.7);}
 .mainbodier .bodier .striplayer{max-width:100%;}
-.mainbodier .striplayer h2, .mainbodier .striplayer .gridBox{max-width:120rem;margin:0 auto;color:#fff;}
+.mainbodier .striplayer h2,.mainbodier .striplayer .gridBox{max-width:120rem;margin:0 auto;color:#fff;}
 
 .mainbodier .bodier section{padding:2rem 0;padding-top:9.5rem;margin:0 auto;margin-top:-9.5rem;display:flex;width:100%;max-width:120rem;}
 .mainbodier .bodier section article{width:100%;position:relative;clear:both;}
 
-.mainbodier .bodier section h2:after{content:"\f120";display:block;width:2rem;height:2rem;font-family:FontAwesome;font-weight:100;text-align:center;position:absolute;top:50%;margin-top:-1rem;left:0;}
+.mainbodier .bodier section h2:after{content:"label_important";display:block;width:2rem;font-size:1.5rem;line-height:2rem;font-weight:100;text-align:center;font-family:"Material Icons";position:absolute;top:0;left:0;}
 .mainbodier .bodier section h2{font-size:2rem;font-weight:600;position:relative;}
 
 .mainbodier .bodier section h3{font-size:1.8rem;text-align:center;position:relative;}
@@ -79,20 +83,10 @@ nav label ul li a span{position:relative;cursor:pointer;}
 
 .mainbodier .bodier section h2,
 .mainbodier .bodier section .txtBox{padding-left:2.2rem;}
-.mainbodier .bodier section .txtBox p{font-size:1.6rem;line-height:1.8rem;padding-bottom:2rem;}
+.mainbodier .bodier section .txtBox p,.mainbodier .bodier section .txtBox li{font-size:1.6rem;line-height:1.8rem;padding-bottom:2rem;}
 
 .mainbodier .bodier section .mediaBox{position:relative;}
 .mainbodier .bodier section .ima{height:0;background:#888;padding-top:56.25%;overflow:hidden;}
 
 footer{background:#fff;background:#191919;width:100%;float:left;}
 footer p{font-size:1.6rem;text-align:center;line-height:4.5rem;}
-
-
-::-webkit-scrollbar{background:transparent;width:.6rem;border-radius:2rem;box-shadow:0 0 .5rem 0 rgba(0,0,0,.6) inset;}
-::-webkit-scrollbar-thumb{background:rgba(0,0,0,.2);border-radius:2rem;}
-
-::-moz-scrollbar{background:transparent;width:.6rem;border-radius:2rem;box-shadow:0 0 .5rem 0 rgba(0,0,0,.6) inset;}
-::-moz-scrollbar-thumb{background:rgba(0,0,0,.2);border-radius:2rem;}
-
-::scrollbar{background:transparent;width:.6rem;border-radius:2rem;box-shadow:0 0 .5rem 0 rgba(0,0,0,.6) inset;}
-::scrollbar-thumb{background:rgba(0,0,0,.2);border-radius:2rem;}

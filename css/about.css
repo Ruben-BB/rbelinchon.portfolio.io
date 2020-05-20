@@ -1,12 +1,12 @@
 /**about**/
-.self{margin-top:-6.3rem;text-align:center;position:relative;overflow:hidden;background:#444;padding-top:100%;position:absolute;top:0;right:0;}
-.self:before,.self:after{content:"";display:block;height:200%;width:20%;background:#f7931e;position:absolute;top:0;z-index:1;}
-.self:before{right:50%;-webkit-transform:skew(10deg);transform:skew(10deg);}
-.self:after{right:-50%;-webkit-transform:skew(10deg);transform:skew(10deg);}
-.self img{height:auto;width:100%;position:absolute;top:50%;left:0;-webkit-transform:translate(0,-150%);transform:translate(0,-150%);}
+.self{margin-top:-6.3rem;text-align:center;position:relative;overflow:hidden;background:#444;position:absolute;top:0;right:2rem;-webkit-transform:skew(5deg,0);transform:skew(5deg,0);}
+/*.self:before,.self:after{content:"";display:block;width:20%;position:absolute;top:0;z-index:1;}*/
+.self:before{right:70%;border-width:0 8rem 34rem 0;border-style:solid;border-color:transparent transparent #f7931e transparent;}
+.self:after{right:-20%;border-width:34rem 0 0 8rem;border-style:solid;border-color:#f7931e transparent transparent transparent;}
+.self img{height:auto;width:110%;position:relative;left:-5%;-webkit-transform:skew(-5deg,0);transform:skew(-5deg,0);float:left;}
 
 @media (max-width:1024px){
-    .self{margin-top:-5.3rem;}
+    .self{margin-top:-4.3rem;}
 }
 
 @media (max-width:730px){
